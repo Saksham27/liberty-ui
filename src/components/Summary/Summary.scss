@@ -1,0 +1,40 @@
+.box {
+  padding: 0;
+  // margin: 20px;
+}
+
+.displayCard {
+  padding: 35px 25px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  &-details {
+    text-align: left;
+    padding: 0;
+
+    &-title {
+      text-transform: capitalize;
+      font-size: 13px;
+    }
+
+    &-value {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .displayCard {
+    display: flex;
+    flex-direction: column;
+  }
+}
