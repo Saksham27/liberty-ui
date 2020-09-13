@@ -1,25 +1,26 @@
-import React from "react";
-import Button from "react-bootstrap/Button";
-import {
-  Container,
-  Row,
-  Col,
-  NavbarBrand,
-  Badge,
-  Image,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import Summary from "../components/Summary/Summary";
+import { Container, Row, Col, NavbarBrand } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faTv } from "@fortawesome/free-solid-svg-icons";
-import { faBell } from "@fortawesome/free-regular-svg-icons";
+import {
+  faSearch,
+  faTv,
+  faAtom,
+  faDraftingCompass,
+  faStarOfLife,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
+import { faBell, faCompass, faFlag } from "@fortawesome/free-regular-svg-icons";
 import LogoFull from "./../assets/logo-full.svg";
 import LogoMini from "./../assets/logo-mini.svg";
 import User from "./../assets/user-image1.jpg";
 
 export default function Dashbaord() {
+  const [active, setActive] = useState("menu-item-active");
   return (
     <div>
-      <Row>
-        <Container>
+      <Row className="topBar">
+        <Container className="topBar-container">
           <Row>
             <Col md="3" sm="2" xs="1" className="logoBar">
               <NavbarBrand>
@@ -49,39 +50,64 @@ export default function Dashbaord() {
               <div className="account">
                 <img src={User} height="37px" className="account-avatar" />
               </div>
+              <div className="d-lg-none hamburger">
+                <FontAwesomeIcon icon={faBars} />
+              </div>
             </Col>
           </Row>
 
-          <Row className="menu">
-            <Col className="menu-item">
+          <Row className="d-none d-lg-flex menu">
+            <Col className={`menu-item ${active}`}>
               <FontAwesomeIcon icon={faTv} className="menu-item-icon" />
               Dashbaord
             </Col>
-            <Col className="menu-item">Widgets</Col>
-            <Col className="menu-item">UI Elements</Col>
-            <Col className="menu-item">Pages</Col>
-            <Col className="menu-item">Forms</Col>
-            <Col className="menu-item">Apps</Col>
+            <Col className={`menu-item`}>
+              <FontAwesomeIcon icon={faCompass} className="menu-item-icon" />
+              Widgets
+            </Col>
+            <Col className="menu-item">
+              {" "}
+              <FontAwesomeIcon icon={faAtom} className="menu-item-icon" />
+              UI Elements
+            </Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faFlag} className="menu-item-icon" /> Pages
+            </Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon
+                icon={faDraftingCompass}
+                className="menu-item-icon"
+              />
+              Forms
+            </Col>
+            <Col className="menu-item">
+              <FontAwesomeIcon icon={faStarOfLife} className="menu-item-icon" />
+              Apps
+            </Col>
           </Row>
         </Container>
       </Row>
-      <Row>
+      <Row className="dashboard">
         <Container>
-          <Row>
-            <Col>first</Col>
-          </Row>
-          <Row>
-            <Col>first</Col>
-          </Row>
-          <Row>
-            <Col>first</Col>
-          </Row>
-          <Row>
-            <Col>first</Col>
-          </Row>
-          <Row>
-            <Col>first</Col>
-          </Row>
+          <div className="dashboard-container">
+            <Row>
+              <Col>
+                <Summary></Summary>
+              </Col>
+            </Row>
+            <Row>
+              <Col>first</Col>
+            </Row>
+            <Row>
+              <Col>first</Col>
+            </Row>
+            <Row>
+              <Col>first</Col>
+            </Row>
+            <Row>
+              <Col>first</Col>
+            </Row>
+          </div>
         </Container>
       </Row>
     </div>
