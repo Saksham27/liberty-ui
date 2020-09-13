@@ -1,8 +1,18 @@
+#root {
+  font-family: "Open Sans", sans-serif;
+}
+
+.topBar {
+  position: relative;
+  background-color: $color-white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
 .logoBar {
   height: 70px;
   display: flex;
   align-items: center;
-  padding: 0 !important;
+  padding: 0;
 
   &-icons {
     display: flex;
@@ -42,7 +52,6 @@
     top: -5px;
     right: 1px;
     font-size: 14px;
-    // padding: 3px ;
     border-radius: 50%;
     background-color: $color-notification;
     color: $color-white;
@@ -59,26 +68,72 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 0;
+    font-weight: bold;
+    right: -2px;
     content: "\005E";
     transform: rotate(180deg) translate(-100%, 50%);
     cursor: pointer;
   }
 }
 
+.hamburger {
+  margin: 0px 0px 0px 15px;
+}
+
 .menu {
+  margin-bottom: 20px;
   &-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-primary;
+    background-color: $color-grey-light;
+    color: $color-black;
     padding: 15px 10px;
-    color: $color-white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
     cursor: pointer;
 
-    &-icon {
+    &-active {
+      background-color: $color-primary;
       color: $color-white;
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+
+    &-active > &-icon {
+      color: $color-white;
+    }
+
+    &-icon {
+      color: $color-primary;
+
       margin-right: 10px;
     }
+
+    &:hover {
+      background-color: $color-grey-hover;
+    }
   }
+}
+
+.dashboard {
+  position: relative;
+  z-index: -1;
+  background-color: $color-grey-background;
+padding: 24px 0px;
+}
+
+@media only screen and (max-width: 575px) {
+  .topBar-container {
+    margin: 0px 35px;
+  }
+
+  .dashboard-container {
+    margin: 0px 35px;
+    
+  }
+
+  
 }
