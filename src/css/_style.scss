@@ -1,5 +1,6 @@
 #root {
   font-family: "Open Sans", sans-serif;
+  color: $color-font;
 }
 
 .topBar {
@@ -120,7 +121,7 @@
 
 .dashboard {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   background-color: $color-grey-background;
 padding: 24px 0px;
 }
