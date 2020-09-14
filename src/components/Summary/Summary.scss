@@ -1,4 +1,4 @@
-.box {
+.summary-box {
   padding: 0;
   // margin: 20px;
 }
@@ -8,6 +8,7 @@
   line-height: 24px;
   display: flex;
   flex-direction: column;
+  
 
   &-icon {
     display: flex;
@@ -31,6 +32,7 @@
     }
   }
 }
+
 
 @media only screen and (max-width: 575px) {
   .displayCard {
