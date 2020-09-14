@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Summary from "../components/Summary/Summary";
-import { Container, Row, Col, NavbarBrand } from "react-bootstrap";
+import { Container, Row, Col, NavbarBrand, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -14,6 +14,8 @@ import { faBell, faCompass, faFlag } from "@fortawesome/free-regular-svg-icons";
 import LogoFull from "./../assets/logo-full.svg";
 import LogoMini from "./../assets/logo-mini.svg";
 import User from "./../assets/user-image1.jpg";
+import SalesOverview from "../components/SalesOverview/SalesOverview";
+import TaskTable from "../components/TaskTable/TaskTable";
 
 export default function Dashbaord() {
   const [active, setActive] = useState("menu-item-active");
@@ -96,10 +98,14 @@ export default function Dashbaord() {
               </Col>
             </Row>
             <Row>
-              <Col>first</Col>
+              <Col>
+                <SalesOverview></SalesOverview>
+              </Col>
             </Row>
             <Row>
-              <Col>first</Col>
+              <Col>
+                <TaskTable></TaskTable>
+              </Col>
             </Row>
             <Row>
               <Col>first</Col>
