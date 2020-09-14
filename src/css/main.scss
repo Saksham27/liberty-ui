@@ -2,7 +2,10 @@
 @import "./variables";
 @import "./customiseBootstrap";
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./utilities";
 @import "./style";
 @import "./../components/Summary/Summary.scss";
+@import "./../components/SalesOverview/SalesOverview.scss";
+@import "./../components/TaskTable/TaskTable.scss";
 
 
