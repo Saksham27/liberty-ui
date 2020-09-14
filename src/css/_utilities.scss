@@ -1,0 +1,22 @@
+.centerElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-transform: capitalize;
+    background-color: $color-button;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.borderTop{
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
