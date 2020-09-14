@@ -1,0 +1,18 @@
+.table {
+  font-size: 13px;
+  line-height: 13px;
+  &-heading {
+    font-weight: 600;
+  }
+  &-data {
+    font-weight: 400;
+    opacity: 0.7;
+  }
+}
+
+
+
+.payment-badge{
+    padding: 5px;
+    color: $color-white
+}
