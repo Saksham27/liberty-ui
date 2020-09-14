@@ -4,13 +4,13 @@ import newUsers from "./../../assets/newUsers.PNG";
 import newFeedbacks from "./../../assets/newFeedbacks.PNG";
 import employees from "./../../assets/Employees.PNG";
 import totalSales from "./../../assets/totalSales.PNG";
-import "./Summary.scss";
+
 
 
 export default function Summary() {
   return (
     <Row className="summary">
-      <Col md="3" xs="6" className="box">
+      <Col md="3" xs="6" className="summary-box">
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
@@ -23,7 +23,7 @@ export default function Summary() {
           </Row>
         </Card>
       </Col>
-      <Col md="3" xs="6" className="box">
+      <Col md="3" xs="6" className="summary-box">
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
@@ -36,7 +36,7 @@ export default function Summary() {
           </Row>
         </Card>
       </Col>
-      <Col md="3" xs="6" className="box">
+      <Col md="3" xs="6" className="summary-box">
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
@@ -49,7 +49,7 @@ export default function Summary() {
           </Row>
         </Card>
       </Col>
-      <Col md="3" xs="6" className="box">
+      <Col md="3" xs="6" className="summary-box">
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
