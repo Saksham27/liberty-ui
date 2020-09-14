@@ -1,0 +1,90 @@
+.overview-card {
+    padding: 35px 15px;
+}
+
+.employee {
+    text-transform: capitalize;
+    &-avatar {
+        &-pic {
+            border-radius: 50%;
+        }
+    }
+
+    &-name {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        letter-spacing: 0.8;
+    }
+
+    &-position {
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 400;
+        letter-spacing: 0.8;
+        opacity: 0.7;
+    }
+
+    &-details {
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        letter-spacing: 0.8;
+    }
+
+    &-social-stats{
+        
+
+        &-value{
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 600;
+        }
+
+        &-name{
+            font-size: 13px;
+            line-height: 19px;
+            font-weight: 400;
+        }
+    }
+}
+
+.stats{
+    &-name{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    &-value{
+        font-size: 35px;
+        line-height: 42px;
+        font-weight: 600;
+        text-align: left;
+        text-transform: capitalize;
+    }
+     &-change{
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 400;
+        text-align: left;
+        text-transform: capitalize;
+    }
+}
+
+.sales-stats{
+    &-value{
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 600;
+        }
+
+        &-name{
+            font-size: 13px;
+            line-height: 19px;
+            font-weight: 400;
+        }
+}
