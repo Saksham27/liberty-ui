@@ -1,7 +1,7 @@
-import dashbardData from "./../dashbaordData.json"
+import dashboardData from "./../dashbaordData.json"
 
 const defaultState ={
-    dashbaord : dashbardData
+    dashbaord : dashboardData
 }
 
 function reducer(state = defaultState,action) {
