@@ -18,9 +18,11 @@ import SalesOverview from "../components/SalesOverview/SalesOverview";
 import TaskTable from "../components/TaskTable/TaskTable";
 import CurrentStatus from "../components/CurrentStatus/CurrentStatus";
 import Tickets from "../components/Tickets/tickets";
+import { connect } from "react-redux";
 
-export default function Dashbaord() {
+function Dashbaord(props) {
   const [active] = useState("menu-item-active");
+  console.log(props);
   return (
     <div>
       <Row className="topBar">
@@ -108,27 +110,31 @@ export default function Dashbaord() {
           <div className="dashboard-container">
             <Row>
               <Col>
-                <Summary></Summary>
+                <Summary summaryData={props.summary}></Summary>
               </Col>
             </Row>
             <Row>
               <Col>
-                <SalesOverview></SalesOverview>
+                <SalesOverview
+                  employee={props.employeeInfo}
+                  productSupport={props.productSupport}
+                  sales={props.sales}
+                ></SalesOverview>
               </Col>
             </Row>
             <Row>
               <Col>
-                <TaskTable></TaskTable>
+                <TaskTable tasks={props.assignedTask}></TaskTable>
               </Col>
             </Row>
             <Row>
               <Col>
-                <CurrentStatus></CurrentStatus>
+                <CurrentStatus timeline={props.timelineData} currentData={props.currentData} projectStatus={props.projectStatus}></CurrentStatus>
               </Col>
             </Row>
             <Row>
               <Col>
-                <Tickets></Tickets>
+                <Tickets ticketData={props.ticketData}></Tickets>
               </Col>
             </Row>
           </div>
@@ -137,3 +143,11 @@ export default function Dashbaord() {
     </div>
   );
 }
+
+function mapStateToProps(state) {
+  return {
+    ...state.dashbaord.data,
+  };
+}
+
+export default connect(mapStateToProps)(Dashbaord);
