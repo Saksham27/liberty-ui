@@ -1,5 +1,14 @@
 import React from "react";
-import { LineChart, Line, Tooltip, AreaChart, Area, XAxis, ResponsiveContainer, CartesianGrid, YAxis, Legend } from "recharts";
+import {
+  LineChart,
+  Line,
+  Tooltip,
+  AreaChart,
+  Area,
+  XAxis,
+  ResponsiveContainer,
+  YAxis,
+} from "recharts";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import developer from "./../../assets/developer-image.jpg";
 const ProductSupportdata = [
@@ -57,9 +66,9 @@ export default function SalesOverview() {
               <Row className="employee-avatar centerElement">
                 <img
                   src={developer}
-                  height="37px"
                   height="92px"
                   className="employee-avatar-pic"
+                  alt="developer"
                 />
               </Row>
               <Row className="my-2 employee-name centerElement">
