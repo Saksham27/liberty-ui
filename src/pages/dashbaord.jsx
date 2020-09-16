@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Summary from "../components/Summary/Summary";
-import { Container, Row, Col, NavbarBrand, Button } from "react-bootstrap";
+import { Container, Row, Col, NavbarBrand, Button, Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -16,6 +16,9 @@ import LogoMini from "./../assets/logo-mini.svg";
 import User from "./../assets/user-image1.jpg";
 import SalesOverview from "../components/SalesOverview/SalesOverview";
 import TaskTable from "../components/TaskTable/TaskTable";
+import CurrentStatus from "../components/CurrentStatus/CurrentStatus";
+import Tickets from "../components/Tickets/tickets";
+
 
 export default function Dashbaord() {
   const [active, setActive] = useState("menu-item-active");
@@ -57,38 +60,39 @@ export default function Dashbaord() {
               </div>
             </Col>
           </Row>
-
-          <Row className="d-none d-lg-flex menu">
-            <Col className={`menu-item ${active}`}>
-              <FontAwesomeIcon icon={faTv} className="menu-item-icon" />
-              Dashbaord
-            </Col>
-            <Col className={`menu-item`}>
-              <FontAwesomeIcon icon={faCompass} className="menu-item-icon" />
-              Widgets
-            </Col>
-            <Col className="menu-item">
-              {" "}
-              <FontAwesomeIcon icon={faAtom} className="menu-item-icon" />
-              UI Elements
-            </Col>
-            <Col className="menu-item">
-              <FontAwesomeIcon icon={faFlag} className="menu-item-icon" /> Pages
-            </Col>
-            <Col className="menu-item">
-              <FontAwesomeIcon
-                icon={faDraftingCompass}
-                className="menu-item-icon"
-              />
-              Forms
-            </Col>
-            <Col className="menu-item">
-              <FontAwesomeIcon icon={faStarOfLife} className="menu-item-icon" />
-              Apps
-            </Col>
-          </Row>
         </Container>
       </Row>
+      <Navbar sticky="top" className="d-none d-lg-flex px-0 py-0">
+        <Container className=" menu">
+          <Col className={`menu-item ${active}`}>
+            <FontAwesomeIcon icon={faTv} className="menu-item-icon" />
+            Dashbaord
+          </Col>
+          <Col className={`menu-item`}>
+            <FontAwesomeIcon icon={faCompass} className="menu-item-icon" />
+            Widgets
+          </Col>
+          <Col className="menu-item">
+            {" "}
+            <FontAwesomeIcon icon={faAtom} className="menu-item-icon" />
+            UI Elements
+          </Col>
+          <Col className="menu-item">
+            <FontAwesomeIcon icon={faFlag} className="menu-item-icon" /> Pages
+          </Col>
+          <Col className="menu-item">
+            <FontAwesomeIcon
+              icon={faDraftingCompass}
+              className="menu-item-icon"
+            />
+            Forms
+          </Col>
+          <Col className="menu-item">
+            <FontAwesomeIcon icon={faStarOfLife} className="menu-item-icon" />
+            Apps
+          </Col>
+        </Container>
+      </Navbar>
       <Row className="dashboard">
         <Container>
           <div className="dashboard-container">
@@ -108,10 +112,14 @@ export default function Dashbaord() {
               </Col>
             </Row>
             <Row>
-              <Col>first</Col>
+              <Col>
+                <CurrentStatus></CurrentStatus>
+              </Col>
             </Row>
             <Row>
-              <Col>first</Col>
+              <Col>
+                <Tickets></Tickets>
+              </Col>
             </Row>
           </div>
         </Container>
