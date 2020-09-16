@@ -2,8 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
+import { createStore } from "redux";
+import reducer from "./reducers/reducer";
 import Dashbaord from "./pages/dashbaord";
 import "./css/main.scss";
+
+const store = createStore(
+  reducer
+)
 
 ReactDOM.render(
   <React.StrictMode>
