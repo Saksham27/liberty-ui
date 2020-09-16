@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Badge,
-  Button,
-  Card,
-  Col,
-  Container,
-  Row,
-  Table,
-} from "react-bootstrap";
-import userImage1 from "./../../assets/user-image1.jpg";
-import userImage2 from "./../../assets/user-image2.jpg";
-import userImage3 from "./../../assets/user-image3.jpg";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
 
 const ticketData = [
   {
@@ -65,7 +54,7 @@ export default function tickets() {
                         <img
                           className="rounded-circle mb-4 mb-md-0"
                           src={ticket.userImage}
-                          alt="profile image"
+                          alt="profile"
                           height="43px"
                         ></img>
                       </Col>
