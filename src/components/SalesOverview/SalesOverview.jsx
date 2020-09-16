@@ -37,10 +37,10 @@ export default function SalesOverview() {
     <ResponsiveContainer width="100%" height={230}>
       <LineChart
         data={ProductSupportdata}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+        margin={{ top: 5, right: 30, left: 0, bottom: 5 }}
       >
-        <XAxis dataKey="name" tickLine="false" />
-        <YAxis />
+        <XAxis dataKey="name" axisLine={false} tickLine={false} />
+        <YAxis axisLine={false} tickLine={false} />
         <Tooltip />
 
         <Line type="monotone" dataKey="Product" stroke="#6168e8" />
@@ -51,8 +51,8 @@ export default function SalesOverview() {
   return (
     <React.Fragment>
       <Row className="mt-4">
-        <Col lg="4" className="pl-lg-0 pr-lg-4 ">
-          <Card className="overview-card">
+        <Col md="4" className="mb-4 mb-md-0 pl-md-0 pr-md-4 px-0 ">
+          <Card className="overview-card cardMinHeight">
             <Card.Body className="pt-0">
               <Row className="employee-avatar centerElement">
                 <img
@@ -101,8 +101,8 @@ export default function SalesOverview() {
           </Card>
         </Col>
 
-        <Col lg="4" className="px-lg-4">
-          <Card>
+        <Col md="4" className="mb-4 mb-md-0 px-0 px-md-4">
+          <Card className="cardMinHeight">
             <Card.Body className="mt-4 mx-4">
               <Row className="stats-name">Top Products</Row>
               <Row className="stats-value">598,496</Row>
@@ -119,8 +119,8 @@ export default function SalesOverview() {
           </Card>
         </Col>
 
-        <Col lg="4" className="pl-lg-4 pr-lg-0">
-          <Card>
+        <Col md="4" className=" mb-md-0 px-0 pl-md-4 pr-md-0">
+          <Card className="cardMinHeight">
             <Card.Body>
               <Row className="sales-stats centerText mb-3">
                 <Col>
