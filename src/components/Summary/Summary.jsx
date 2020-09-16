@@ -5,8 +5,6 @@ import newFeedbacks from "./../../assets/newFeedbacks.PNG";
 import employees from "./../../assets/Employees.PNG";
 import totalSales from "./../../assets/totalSales.PNG";
 
-
-
 export default function Summary() {
   return (
     <Row className="summary">
@@ -14,7 +12,7 @@ export default function Summary() {
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
-              <img src={newUsers} />
+              <img src={newUsers} alt="new Users Icon"/>
             </Col>
             <Col className="displayCard-details">
               <Row className="displayCard-details-title">new users</Row>
@@ -27,7 +25,7 @@ export default function Summary() {
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
-              <img src={newFeedbacks} />
+              <img src={newFeedbacks} alt="new feedbacks icon"/>
             </Col>
             <Col className="displayCard-details">
               <Row className="displayCard-details-title">new feedbacks</Row>
@@ -40,7 +38,7 @@ export default function Summary() {
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
-              <img src={employees} />
+              <img src={employees} alt="employees icon"/>
             </Col>
             <Col className="displayCard-details">
               <Row className="displayCard-details-title">employees</Row>
@@ -53,7 +51,7 @@ export default function Summary() {
         <Card className="displayCard">
           <Row>
             <Col className="displayCard-icon">
-              <img src={totalSales} />
+              <img src={totalSales} alt="total sales icon" />
             </Col>
             <Col className="displayCard-details">
               <Row className="displayCard-details-title">total sales</Row>
