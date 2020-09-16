@@ -1,0 +1,76 @@
+.cardMinHeight{
+    min-height: 100%;
+}
+.chart-title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.project-status {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    &-title {
+        text-transform: capitalize;
+    }
+
+    &-number {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    &-unit {
+        text-transform: uppercase;
+    }
+}
+.timeline {
+    list-style: none;
+    position: relative;
+}
+ul > li {
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+        left: 0px;
+        // top: 1px;
+        border: 4px solid #464de4;
+        margin-right: 15px;
+        z-index: 2;
+        background: #fff;
+    }
+
+    &::after {
+        content: "";
+        border: 1px solid #d5dcec;
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        left: 7px;
+    }
+}
+.update {
+    text-transform: capitalize;
+    &-title {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+    }
+
+    &-subject {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+
+    &-description,
+    &-time {
+        font-size: 13px;
+        line-height: 23px;
+        font-weight: 400;
+    }
+}
