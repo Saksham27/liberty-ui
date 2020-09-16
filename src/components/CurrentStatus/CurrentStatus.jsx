@@ -1,17 +1,8 @@
 import React from "react";
-import { Button, Card, CardImg, Col, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Legend,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 
 const timelineData = [
   {
