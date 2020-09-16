@@ -6,14 +6,18 @@
 .topBar {
   position: relative;
   background-color: $color-white;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  &-container{
+    padding: 0;
+  }
 }
+
+
 .logoBar {
   height: 70px;
   display: flex;
   align-items: center;
-  padding: 0;
+  // padding: 0;
 
   &-icons {
     display: flex;
@@ -82,7 +86,12 @@
 }
 
 .menu {
-  margin-bottom: 20px;
+  padding-top:0 ;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: $color-white;
+
+  // margin-bottom: 20px;
+
   &-item {
     display: flex;
     align-items: center;
