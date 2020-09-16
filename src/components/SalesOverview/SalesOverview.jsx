@@ -10,20 +10,14 @@ import {
   YAxis,
 } from "recharts";
 import { Button, Card, Col, Row } from "react-bootstrap";
-import developer from "./../../assets/developer-image.jpg";
-const ProductSupportdata = [
-  { name: "2012", Product: 300, Support: 150 },
-  { name: "2013", Product: 400, Support: 200 },
-  { name: "2014", Product: 300, Support: 150 },
-  { name: "2015", Product: 440, Support: 200 },
-  { name: "2016", Product: 700, Support: 350 },
-  { name: "2017", Product: 550, Support: 320 },
-  { name: "2018", Product: 730, Support: 400 },
-];
-export default function SalesOverview() {
+
+export default function SalesOverview(props) {
   const renderAreaChart = (
     <ResponsiveContainer width="100%" height={190}>
-      <AreaChart data={ProductSupportdata} margin={{ left: 0, right: 0 }}>
+      <AreaChart
+        data={props.productSupport.ProductSupportdata}
+        margin={{ left: 0, right: 0 }}
+      >
         <Area
           type="monotone"
           dataKey="Product"
@@ -45,15 +39,31 @@ export default function SalesOverview() {
   const renderLineChart = (
     <ResponsiveContainer width="100%" height={230}>
       <LineChart
-        data={ProductSupportdata}
+        data={props.sales.Salesdata}
         margin={{ top: 5, right: 30, left: 0, bottom: 5 }}
       >
-        <XAxis dataKey="name" axisLine={false} tickLine={false} />
-        <YAxis axisLine={false} tickLine={false} />
+        <XAxis
+          dataKey="name"
+          axisLine={false}
+          tickLine={false}
+          style={{ fontSize: "12px" }}
+          interval={1}
+        />
+        <YAxis axisLine={false} tickLine={false} style={{ fontSize: "12px" }} />
         <Tooltip />
 
-        <Line type="monotone" dataKey="Product" stroke="#6168e8" />
-        <Line type="monotone" dataKey="Support" stroke="#868eef" />
+        <Line
+          type="monotone"
+          dataKey="OnlineSales"
+          stroke="#d9e1fd"
+          strokeWidth={3}
+        />
+        <Line
+          type="monotone"
+          dataKey="StoreSales"
+          stroke="#6b71e9"
+          strokeWidth={3}
+        />
       </LineChart>
     </ResponsiveContainer>
   );
@@ -65,21 +75,20 @@ export default function SalesOverview() {
             <Card.Body className="pt-0">
               <Row className="employee-avatar centerElement">
                 <img
-                  src={developer}
+                  src={require(`./../../assets/${props.employee.avatar}`)}
                   height="92px"
                   className="employee-avatar-pic"
                   alt="developer"
                 />
               </Row>
               <Row className="my-2 employee-name centerElement">
-                Maria Johonson
+                {props.employee.name}
               </Row>
               <Row className="my-2 employee-position centerElement">
-                Developer
+                {props.employee.position}
               </Row>
               <Row className="my-3 employee-details centerElement">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Lorem
+                {props.employee.description}
               </Row>
               <Row className="my-4  centerElement">
                 <Button variant="primary" className="button">
@@ -90,18 +99,18 @@ export default function SalesOverview() {
                 <Col>
                   <Row className="employee-social-stats-value my-3">
                     <Col xs="4" xl="4">
-                      5890
+                      {props.employee.postsMade}
                     </Col>
                     <Col xs="4" xl="4">
-                      1596
+                      {props.employee.followers}
                     </Col>
                     <Col xs="4" xl="4">
-                      7894
+                      {props.employee.likes}
                     </Col>
                   </Row>
                   <Row className="employee-social-stats-name my-2">
                     <Col xs="4">Post</Col>
-                    <Col xs="4">Folllowers</Col>
+                    <Col xs="4">Followers</Col>
                     <Col xs="4">Likes</Col>
                   </Row>
                 </Col>
@@ -114,13 +123,22 @@ export default function SalesOverview() {
           <Card className="cardMinHeight">
             <Card.Body className="mt-4 mx-4">
               <Row className="stats-name">Top Products</Row>
-              <Row className="stats-value">598,496</Row>
-              <Row className="stats-change">6.5% change from today</Row>
+              <Row className="stats-value">
+                {props.productSupport.topProducts}
+              </Row>
+              <Row className="stats-change">
+                {props.productSupport.topProductPercentageChange}
+              </Row>
               <Row className="mt-4 pt-4 stats-name borderTop">
                 Support Cases
               </Row>
-              <Row className="stats-value">323,360</Row>
-              <Row className="stats-change">2.5% change from yesterday</Row>
+              <Row className="stats-value">
+                {props.productSupport.supportCases}
+              </Row>
+              <Row className="stats-change">
+                {" "}
+                {props.productSupport.supportCasesPercentageChange}
+              </Row>
             </Card.Body>
             <Row className="px-0">
               <Col className="">{renderAreaChart}</Col>
@@ -134,8 +152,8 @@ export default function SalesOverview() {
               <Row className="sales-stats centerText mb-3">
                 <Col>
                   <Row className="sales-stats-value my-3">
-                    <Col xs="6">6,256</Col>
-                    <Col xs="6">8569</Col>
+                    <Col xs="6">{props.sales.totalSales}</Col>
+                    <Col xs="6">{props.sales.openCampaign}</Col>
                   </Row>
                   <Row className="sales-stats-name my-2">
                     <Col xs="6">Total Sales</Col>
@@ -150,8 +168,8 @@ export default function SalesOverview() {
               <Row className="sales-stats centerText mt-3">
                 <Col>
                   <Row className="sales-stats-value my-3">
-                    <Col xs="6">5136</Col>
-                    <Col xs="6">4596</Col>
+                    <Col xs="6">{props.sales.onlineSales}</Col>
+                    <Col xs="6">{props.sales.storeSales}</Col>
                   </Row>
                   <Row className="sales-stats-name my-2">
                     <Col xs="6">Online Sales</Col>
