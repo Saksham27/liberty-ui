@@ -1,0 +1,192 @@
+{
+  "data": {
+    "summary": {
+      "newUsers": 65650,
+      "newFeedbacks": 32602,
+      "employees": 17583,
+      "totalSales": 61119
+    },
+    "employeeInfo": {
+      "name": "Maria Johonson",
+      "avatar": "developer-image.jpg",
+      "position": "Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem",
+      "postsMade": 5890,
+      "followers": 1596,
+      "likes": 7894
+    },
+    "productSupport": {
+      "topProducts": 598496,
+      "topProductPercentageChange": "6.5% Change From Today",
+      "supportCases": 323360,
+      "supportCasesPercentageChange": "2.5% Change From Yesterday",
+      "ProductSupportdata": [
+        {
+          "name": "2012",
+          "Product": 300,
+          "Support": 150
+        },
+        {
+          "name": "2013",
+          "Product": 400,
+          "Support": 200
+        },
+        {
+          "name": "2014",
+          "Product": 300,
+          "Support": 150
+        },
+        {
+          "name": "2015",
+          "Product": 440,
+          "Support": 200
+        },
+        {
+          "name": "2016",
+          "Product": 700,
+          "Support": 350
+        },
+        {
+          "name": "2017",
+          "Product": 550,
+          "Support": 320
+        },
+        {
+          "name": "2018",
+          "Product": 730,
+          "Support": 400
+        }
+      ]
+    },
+    "sales": {
+      "totalSales": 6256,
+      "openCampaign": 8569,
+      "onlineSales": 5136,
+      "storeSales": 4596,
+      "Salesdata": [
+        { "name": "2006", "StoreSales": 50, "OnlineSales": 0 },
+        { "name": "2007", "StoreSales": 75, "OnlineSales": 75 },
+        { "name": "2008", "StoreSales": 25, "OnlineSales": 15 },
+        { "name": "2009", "StoreSales": 35, "OnlineSales": 50 },
+        { "name": "2010", "StoreSales": 65, "OnlineSales": 100 },
+        { "name": "2011", "StoreSales": 75, "OnlineSales": 70 }
+      ]
+    },
+    "assignedTask": [
+      {
+        "id": 320,
+        "assignee": "Mark C.Diaz",
+        "taskDetail": "Support of thteme",
+        "paymentMethod": "Credit card",
+        "paymentStatus": "Approved",
+        "amount": "$12,245",
+        "trackingNumber": "JPBBN435893458"
+      },
+      {
+        "id": 321,
+        "assignee": "Jose D",
+        "taskDetail": "Verify your email address !",
+        "paymentMethod": "Internet banking",
+        "paymentStatus": "Pending",
+        "amount": "$12,245",
+        "trackingNumber": "BDYBN435893325"
+      },
+      {
+        "id": 322,
+        "assignee": "Philips T",
+        "taskDetail": "Item support message send",
+        "paymentMethod": "Credit card",
+        "paymentStatus": "Approved",
+        "amount": "$12,245",
+        "trackingNumber": "JSNTN435884258"
+      },
+      {
+        "id": 323,
+        "assignee": "Luke Pixel",
+        "taskDetail": "New submission on website",
+        "paymentMethod": "Cash on delivery",
+        "paymentStatus": "Rejected",
+        "amount": "$12,245",
+        "trackingNumber": "JPABT435893678"
+      }
+    ],
+    "ticketData": [
+      {
+        "userImage": "user-image1.jpg",
+        "name": "James",
+        "ticketNumber": 23047,
+        "ticketSubject": "Donec rutrum congue leo eget malesuada.",
+        "ticketDescription": "Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim vivamus.",
+        "lastResponded": "3 hours ago",
+        "due": "2 Days"
+      },
+      {
+        "userImage": "user-image2.jpg",
+        "name": "Stella",
+        "ticketNumber": 23135,
+        "ticketSubject": "Curabitur aliquet quam id dui posuere blandit.",
+        "ticketDescription": "Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl.",
+        "lastResponded": "3 hours ago",
+        "due": "2 Days"
+      },
+      {
+        "userImage": "user-image3.jpg",
+
+        "name": "John Doe",
+        "ticketNumber": 23246,
+        "ticketSubject": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar.",
+        "ticketDescription": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Lorem ipsum dolor sit amet.",
+        "lastResponded": "3 hours ago",
+        "due": "2 Days"
+      }
+    ],
+    "timelineData": [
+      {
+        "subject": "User confirmation",
+        "description": "Donec rutrum congue leo eget malesuada.",
+        "time": "7 months ago."
+      },
+      {
+        "subject": "Continuous evaluation",
+        "description": "Vivamus suscipit tortor eget felis porttitor volutpat.",
+        "time": "7 months ago."
+      },
+      {
+        "subject": "Promotion",
+        "description": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+        "time": "7 months ago."
+      }
+    ],
+    "currentData": [
+      {
+        "day": "Mon",
+        "Profit": 330
+      },
+      {
+        "day": "Tue",
+        "Profit": 380
+      },
+      {
+        "day": "Wed",
+        "Profit": 230
+      },
+      {
+        "day": "Thu",
+        "Profit": 400
+      },
+      {
+        "day": "Fri",
+        "Profit": 309
+      },
+      {
+        "day": "Sat",
+        "Profit": 530
+      },
+      {
+        "day": "Sun",
+        "Profit": 340
+      }
+    ],
+    "projectStatus": 76533
+  }
+}
