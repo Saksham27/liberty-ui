@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22efecb789a2761eb501093584d6176d",
+    "revision": "d9846eba2bc5dc37cd5ad9f71ef6efa6",
     "url": "/liberty-ui/index.html"
   },
   {
