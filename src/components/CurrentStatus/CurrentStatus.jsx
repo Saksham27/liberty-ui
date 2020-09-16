@@ -82,7 +82,7 @@ export default function CurrentStatus() {
   return (
     <React.Fragment>
       <Row className="mt-1">
-        <Col md="6" className="pl-lg-0 pr-lg-4 ">
+        <Col md="6" className="mb-4 mb-md-0 px-0 pl-lg-0 pr-lg-4 ">
           <Card className="cardMinHeight">
             <Card.Body className="py-6 px-4 pt-6">
               <Card.Title className="chart-title mt-3 mb-4">
@@ -110,7 +110,7 @@ export default function CurrentStatus() {
           </Card>
         </Col>
 
-        <Col md="6" className="pl-lg-4 pr-lg-0">
+        <Col md="6" className=" mb-md-0 px-0 pl-lg-4 pr-lg-0">
           <Card className="cardMinHeight">
             <Card.Body>
               <Card.Title className="update-title mt-3">Updates</Card.Title>
