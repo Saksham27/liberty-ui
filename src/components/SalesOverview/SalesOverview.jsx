@@ -36,16 +36,15 @@ export default function SalesOverview() {
   const renderLineChart = (
     <ResponsiveContainer width="100%" height={230}>
       <LineChart
-        
         data={ProductSupportdata}
         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
       >
-        <XAxis dataKey="name" tickLine="false"/>
+        <XAxis dataKey="name" tickLine="false" />
         <YAxis />
         <Tooltip />
 
-        <Line type="monotone" dataKey="Product" stroke="#6b71e9" />
-        <Line type="monotone" dataKey="Support" stroke="#d9e1fd" />
+        <Line type="monotone" dataKey="Product" stroke="#6168e8" />
+        <Line type="monotone" dataKey="Support" stroke="#868eef" />
       </LineChart>
     </ResponsiveContainer>
   );
