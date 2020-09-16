@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Summary from "../components/Summary/Summary";
-import { Container, Row, Col, NavbarBrand, Button, Nav, Navbar } from "react-bootstrap";
+import { Container, Row, Col, NavbarBrand, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -19,9 +19,8 @@ import TaskTable from "../components/TaskTable/TaskTable";
 import CurrentStatus from "../components/CurrentStatus/CurrentStatus";
 import Tickets from "../components/Tickets/tickets";
 
-
 export default function Dashbaord() {
-  const [active, setActive] = useState("menu-item-active");
+  const [active] = useState("menu-item-active");
   return (
     <div>
       <Row className="topBar">
@@ -34,8 +33,14 @@ export default function Dashbaord() {
                   src={LogoFull}
                   height="30px"
                   width="160px"
+                  alt="logo"
                 ></img>
-                <img className="d-md-none" src={LogoMini} height="30px"></img>
+                <img
+                  className="d-md-none"
+                  src={LogoMini}
+                  height="30px"
+                  alt="mini logo"
+                ></img>
               </NavbarBrand>
             </Col>
             <Col className="logoBar logoBar-icons">
@@ -53,7 +58,12 @@ export default function Dashbaord() {
                 <div className="notification-count">5</div>
               </div>
               <div className="account">
-                <img src={User} height="37px" className="account-avatar" />
+                <img
+                  src={User}
+                  height="37px"
+                  className="account-avatar"
+                  alt="user account avatar"
+                />
               </div>
               <div className="d-lg-none hamburger">
                 <FontAwesomeIcon icon={faBars} />
