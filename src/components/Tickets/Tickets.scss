@@ -1,0 +1,28 @@
+.heading{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.ticket {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    &-username {
+        font-weight: 700;
+    }
+
+    &-number {
+        font-weight: 500;
+    }
+
+    &-subject{
+        font-weight: 600;
+    }
+
+    &-lastResponded{
+        opacity: 0.6;
+    }
+}
+
+
