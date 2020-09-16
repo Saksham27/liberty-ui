@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## View live UI demo here :
 
-[Liberty UI Demo](https://saksham27.github.io/quanment/)
+[Liberty UI Demo](https://saksham27.github.io/liberty-ui/)
 
 ## Liberty UI Dashbaord
 
