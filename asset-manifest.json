@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/liberty-ui/static/css/main.db7da3d1.chunk.css",
-    "main.js": "/liberty-ui/static/js/main.c2be551e.chunk.js",
-    "main.js.map": "/liberty-ui/static/js/main.c2be551e.chunk.js.map",
+    "main.css": "/liberty-ui/static/css/main.1c2e7b1f.chunk.css",
+    "main.js": "/liberty-ui/static/js/main.482519dd.chunk.js",
+    "main.js.map": "/liberty-ui/static/js/main.482519dd.chunk.js.map",
     "runtime-main.js": "/liberty-ui/static/js/runtime-main.e1bdbc66.js",
     "runtime-main.js.map": "/liberty-ui/static/js/runtime-main.e1bdbc66.js.map",
     "static/js/2.5bc8cb51.chunk.js": "/liberty-ui/static/js/2.5bc8cb51.chunk.js",
     "static/js/2.5bc8cb51.chunk.js.map": "/liberty-ui/static/js/2.5bc8cb51.chunk.js.map",
     "index.html": "/liberty-ui/index.html",
-    "precache-manifest.af86da4e93c3ee98a84fbea8708271bc.js": "/liberty-ui/precache-manifest.af86da4e93c3ee98a84fbea8708271bc.js",
+    "precache-manifest.3aa1656f65932d26e3e8a3bbd1af4159.js": "/liberty-ui/precache-manifest.3aa1656f65932d26e3e8a3bbd1af4159.js",
     "service-worker.js": "/liberty-ui/service-worker.js",
-    "static/css/main.db7da3d1.chunk.css.map": "/liberty-ui/static/css/main.db7da3d1.chunk.css.map",
+    "static/css/main.1c2e7b1f.chunk.css.map": "/liberty-ui/static/css/main.1c2e7b1f.chunk.css.map",
     "static/js/2.5bc8cb51.chunk.js.LICENSE.txt": "/liberty-ui/static/js/2.5bc8cb51.chunk.js.LICENSE.txt",
     "static/media/Employees.PNG": "/liberty-ui/static/media/Employees.e7969817.PNG",
     "static/media/UI_screenshot.png": "/liberty-ui/static/media/UI_screenshot.8713871f.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.e1bdbc66.js",
     "static/js/2.5bc8cb51.chunk.js",
-    "static/css/main.db7da3d1.chunk.css",
-    "static/js/main.c2be551e.chunk.js"
+    "static/css/main.1c2e7b1f.chunk.css",
+    "static/js/main.482519dd.chunk.js"
   ]
 }

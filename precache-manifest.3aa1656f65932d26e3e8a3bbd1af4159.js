@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9846eba2bc5dc37cd5ad9f71ef6efa6",
+    "revision": "0bd4abe38cf119dae2ef1a05f779958f",
     "url": "/liberty-ui/index.html"
   },
   {
-    "revision": "9c2c0a1997e9053c54d5",
-    "url": "/liberty-ui/static/css/main.db7da3d1.chunk.css"
+    "revision": "aa08fda94f389a9c89b8",
+    "url": "/liberty-ui/static/css/main.1c2e7b1f.chunk.css"
   },
   {
     "revision": "5be4af8c7ed496cd9fce",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/liberty-ui/static/js/2.5bc8cb51.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9c2c0a1997e9053c54d5",
-    "url": "/liberty-ui/static/js/main.c2be551e.chunk.js"
+    "revision": "aa08fda94f389a9c89b8",
+    "url": "/liberty-ui/static/js/main.482519dd.chunk.js"
   },
   {
     "revision": "990aa1ba8cbf5944a19b",

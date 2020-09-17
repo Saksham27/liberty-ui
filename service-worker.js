@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/liberty-ui/precache-manifest.af86da4e93c3ee98a84fbea8708271bc.js"
+  "/liberty-ui/precache-manifest.3aa1656f65932d26e3e8a3bbd1af4159.js"
 );
 
 self.addEventListener('message', (event) => {
